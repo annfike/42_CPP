@@ -16,8 +16,6 @@ Character::Character(Character const & src)
 {
     for (int i = 0; i < 4; i++)
     {
-        if (_materia[i])
-            delete _materia[i];
         if (src._materia[i])
             _materia[i] = src._materia[i]->clone();
         else
